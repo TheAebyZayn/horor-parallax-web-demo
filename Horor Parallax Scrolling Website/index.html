@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horor Parallax Website Demo | Cover By Codehal</title>
+    <!-- ...................Custom Css Link.................. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- ...................Start Nav Bar.................. -->
+        <nav>
+            <div class="container nav-cotainer">
+                <a href="" class="logo"><h3>Beg Joker.</h3></a>
+                <ul class="nav-links">
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- ...................End Nav Bar.................. -->
+
+
+        <!-- ...................Start Header Section.................. -->
+        <header class="Parallax">
+            <h1 class="Parallax-headeing">Parallax Website</h1>
+            <img src="./img/tree-left.png" id="tree-left">
+            <img src="./img/tree-right.png" id="tree-right">
+            <img src="./img/gate-left.png" id="gate-left">
+            <img src="./img/gate-right.png" id="gate-right">
+            <img src="./img/grass.png" id="grass">
+        </header>
+        <!-- ...................End Header Section.................. -->
+
+
+        <!-- ...................Parallax Website Next Section Demo Text.................. -->
+        <section class="Parallax-demo">
+            <div class="container demon-text-cotnainer">
+                <h2>Parallax Scroll Website</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea at quo enim voluptates porro eligendi labore explicabo, ullam ex! Cum totam deserunt dolores aliquid quae a placeat odit at et cupiditate dolorum amet quos, distinctio, harum quidem? Vero autem iusto quos voluptate, mollitia qui magnam exercitationem placeat hic, fugit cum et eum dolorem, excepturi tenetur soluta! Consequatur, quo provident!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea at quo enim voluptates porro eligendi labore explicabo, ullam ex! Cum totam deserunt dolores aliquid quae a placeat odit at et cupiditate dolorum amet quos, distinctio, harum quidem? Vero autem iusto quos voluptate, mollitia qui magnam exercitationem placeat hic, fugit cum et eum dolorem, excepturi tenetur soluta! Consequatur, quo provident! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo distinctio voluptatibus corrupti? Id aperiam voluptates maiores, doloribus impedit animi vitae! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero a ea molestias tenetur, repellat esse repudiandae suscipit ipsam. Repellat esse beatae doloremque sit officiis incidunt architecto odit consequuntur vitae modi voluptatibus accusamus quod iusto cumque voluptates ad, dolore dignissimos in iste accusantium velit voluptas quisquam consequatur. Sapiente suscipit id cumque, corporis dicta, exercitationem possimus rerum odio veniam omnis officiis? Facilis.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea at quo enim voluptates porro eligendi labore explicabo, ullam ex! Cum totam deserunt dolores aliquid quae a placeat odit at et cupiditate dolorum amet quos, distinctio, harum quidem? Vero autem iusto quos voluptate, mollitia qui magnam exercitationem placeat hic, fugit cum et eum dolorem, excepturi tenetur soluta! Consequatur, quo provident!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea at quo enim voluptates porro eligendi labore explicabo, ullam ex! Cum totam deserunt dolores aliquid quae a placeat odit at et cupiditate dolorum amet quos, distinctio, harum quidem? Vero autem iusto quos voluptate, mollitia qui magnam exercitationem placeat hic, fugit cum et eum dolorem, excepturi tenetur soluta! Consequatur, quo provident! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo distinctio voluptatibus corrupti? Id aperiam voluptates maiores, doloribus impedit animi vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi sint dolorem voluptates, provident quis consequatur iusto, est quos temporibus itaque explicabo. Reiciendis quo cumque ipsa excepturi rem saepe fugit at veniam sed eius ducimus pariatur quae earum quaerat error quod temporibus, quam id quidem sapiente vel. Vitae libero iusto aliquam, sint itaque consequatur distinctio error aperiam aliquid hic eum!
+                </p>                
+            </div>
+        </section>
+        <!-- ...................Parallax Website Next Section Demo Text.................. -->
+
+
+        <!-- ...................Start Script.................. -->
+        <script>
+            let ParallaxHeadingText = document.querySelector('.Parallax-headeing');
+            let TreeLeft = document.querySelector('#tree-left');
+            let TreeRight = document.querySelector('#tree-right');
+            let GateLeft = document.querySelector('#gate-left');
+            let GateRight = document.querySelector('#gate-right');
+
+            window.addEventListener('scroll',()=>{
+                let Value = window.scrollY;
+
+                ParallaxHeadingText.style.marginTop = Value * 2.5 + 'px';
+                TreeLeft.style.left = Value * -1.5 + 'px';
+                TreeRight.style.left = Value * 1.5 + 'px';
+                GateLeft.style.left = Value * 0.5 + 'px';
+                GateRight.style.left = Value * -0.5 + 'px';
+            });
+        </script>
+        <!-- ...................End Script.................. -->
+</body>
+</html>
